@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Estatística</title>
+    <link rel="stylesheet" href ="css/style.css">
+
+</head>
+<body>
+    <div id="main">
+        <div id="main-container">
+            <div id="x">
+                <h2>Insira os dados de X</h2>
+                <input type="text" class="inputs" id=input-x value="" placeholder="">
+            </div>
+
+            <div id="y">
+                <h2>Insira os dados de Y</h2>
+                <input type="text" class="inputs" id=input-y value="" placeholder="">
+            </div>
+            <div id="botoes-container">
+                <button class="botao-inserir" id="botao-x">Inserir</button>
+                <button class="botao-inserir" id="botao-calcular">Calcular</button>
+            </div>
+            <table>
+                <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                </tr>
+                </thead>
+                <tbody id="corpoTabela">
+                </tbody>
+            </table>
+        </div>
+        <div class="hide" id="resultados">
+            <h2>Resultados:</h2>
+
+            <div id="soma-x">
+                <h4>Σ X: </h4>
+                <div class= "saida-resultado" id="resultado-soma-x"></div>
+            </div>
+
+            <div id="soma-x2">
+                <h4>Σ X<sup>2</sup>:</h4>
+                <div class= "saida-resultado" id="resultado-soma-x2"></div>
+            </div>
+
+            <div id="soma-y">
+                <h4>Σ Y: </h4>
+                <div class= "saida-resultado" id="resultado-soma-y"></div>
+            </div>
+
+            <div id="soma-y2">
+                <h4>Σ Y<sup>2</sup>: </h4>
+                <div class= "saida-resultado" id="resultado-soma-y2"></div>
+            </div>
+
+            <div id="soma-xy">
+                <h4>Σ XY: </h4>
+                <div class= "saida-resultado" id="resultado-soma-xy"></div>
+            </div>
+
+            <div id = "r">
+                <h4>Coeficiente de correlação linear (R): </h4>
+                <div class= "saida-resultado" id="resultado-r"></div>
+            </div>
+
+            <div id="y-regressao">
+                <h4>Regressão Linear: </h4>
+                <div class= "saida-resultado" id="resultado-regressao"></div>
+            </div> 
+
+            <div id="b0">
+                <h4>Coeficiente Linear (b0): </h4>
+                <div class= "saida-resultado" id="resultado-b0"></div>
+            </div>
+
+            <div id="b1">
+                <h4>Coeficiente Angular (b1): </h4>
+                <div class= "saida-resultado" id="resultado-b1"></div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
